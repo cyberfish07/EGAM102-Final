@@ -1,0 +1,37 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+  // Movement
+  public float moveSpeed;
+  Rigidbody2D rb;
+  Vector2 moveDir;
+
+  void Start()
+  {
+    rb = GetComponent<Rigidbody2D>();
+  }
+
+  void Update
+  {
+
+  }
+  
+  void InputManagement()
+  {
+    float moveX = Input.GetAxisRaw("Horizontal");
+    float moveY = Input.GetAxisRaw("Vertical");
+  }
+
+  private void Move()
+  {
+
+  }
+
+
+
+
+
+}
